@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<script type="text/javascript">
+function porencima(x) 
+  {
+    x.style.color = "orange";
+  }
+function alquitar(x) 
+  {
+    x.style.color = "black";
+  }
+function alerta(x)
+  {
+    var contador = 0;
+    contador++;
+    alert('Ahora sigues este blog ¡Muchas gracias!  Eres el seguidor numero'+contador)
+  }
+function sobremi(x)
+{
+  window.location="sobremi.html"
+}
+
+</script>
+<head>
+<style type="text/css">
+body {background-image:url('wood.jpg')}
+.caixa
+{
+position: absolute;
+width: 1050px;
+height: 685px;
+background-color: none;
+margin-left: 150px;
+margin-top: -20px;
+z-index: 0;
+}
+.caixatitul
+{
+position: absolute;
+width: 524px;
+height: 45px;
+background-color: white;
+margin-left: 165px;
+margin-top: 20px;
+font-size: 40px;
+font-family: monospace;
+z-index: 0;
+padding: 0px 250px;
+border:black solid;
+}
+.caixaentrada
+{
+position: absolute;
+width: 660px;
+height: 900px;
+background-color: white;
+margin-left: 165px;
+margin-top: 100px;
+font-size: 10px;
+font-family: monospace;
+z-index: 0;
+padding: 0px 20px;
+}
+.caixacostat0
+{
+position: absolute;
+width: 310px;
+height: 50px;
+background-color: lightgrey;
+margin-left: 875px;
+margin-top: 100px;
+font-size: 40px;
+font-family: monospace;
+z-index: 0;
+border:grey solid 1px;
+}
+.caixacostat
+{
+position: absolute;
+width: 310px;
+height: 170px;
+background-color: lightgrey;
+margin-left: 875px;
+margin-top: 150px;
+font-size: 40px;
+font-family: monospace;
+z-index: 0;
+border:grey solid 1px;
+}
+.caixacostat1
+{
+position: absolute;
+width: 310px;
+height: 200px;
+background-color: lightgrey;
+margin-left: 875px;
+margin-top: 320px;
+font-size: 40px;
+font-family: monospace;
+z-index: 0;
+border:grey solid 1px;
+}
+.caixacostat2
+{
+position: absolute;
+width: 230px;
+height: 200px;
+background-color: lightgrey;
+margin-left: 875px;
+margin-top: 520px;
+font-size: 30px;
+font-family: monospace;
+z-index: 0;
+border:grey solid 1px;
+padding-left: 80px;
+}
+.entrada1
+{
+ font-size: 40px;
+}
+.paragraf1
+{
+  font-size: 18px;
+}
+.questionari
+{
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.mifoto
+{
+  width: 150px;
+  height: 150px;
+  padding: 0px 0px;
+}
+.navbar 
+{
+overflow: hidden;
+background-color: transparent;
+font-family: monospace;
+}
+.navbar a 
+{
+float: left;
+font-size: 14px;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown 
+{
+float: center;
+overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+font-size: 16px;    
+border: none;
+outline: none;
+color: black;
+padding: 14px 70px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+margin-left: 30px;
+margin-top: 40px;
+background-color: white;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {background-color: white;}
+
+.dropdown-content 
+{
+display: none;
+position: absolute;
+background-color: none;
+min-width: 160px;
+z-index: 0;
+}
+
+.dropdown-content a 
+{
+float: none;
+color: black;
+padding: 14px 83px;
+text-decoration: none;
+display: block;
+text-align: center;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.dropdown-content a:hover {background-color: none;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.imagen
+{
+  margin-left: 500px;
+  margin-top: 10px;
+  width: 150px;
+  height:200px;
+}
+</style>
+</head>
+<body>
+<div class="caixa"></div>
+<div class="caixatitul">EL DIARIO SABELO TODO</div>
+<div class="caixacostat0">
+  <script type="text/javascript">
+  var contador=isNaN(parseInt(window.name))?1:parseInt(window.name);
+  document.write("Visitas  " +contador);
+  contador++;
+  window.name=contador;
+</script>
+</div>
+<div class="caixacostat">
+        <div class="questionari">
+          <table style="text-align: right; font-size: 15px;">
+            <tr bgcolor="transparent">
+            <tr>
+            <td>NOMBRE</td>
+            <td bgcolor="grey"><input class="sele" type="text" id="COGNOMS" size="15" style="border-color: grey solid;" /></td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>EMAIL</td>
+            <td bgcolor="grey"><input type="text" id="COGNOMS" size="15"/></td>
+            <tr>
+            <td></td>
+            <tr class="questionari1">
+            <td colspan="2"><input style="font-size: 13px;" onclick="alerta(this)" type="submit" value="Suscribirse"/></td></td>
+            <td></td>
+            </tr> 
+          </table>  
+        </div>            
+</div>
+<div class="caixacostat1">
+  <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Secciones ▼
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="WEB.html">Home</a>
+      <a href="reseñas.html">Reseñas</a>
+      </div>
+    </div>
+</div>
+</div>
+<div class="caixacostat2"> Sobre mi
+  <img src="foto.jpg" class="mifoto" onclick="sobremi(this)">
+</div>
+<div class="caixaentrada">
+  <h1 class="entrada1" onmouseover="porencima(this)" onmouseout="alquitar(this)">RESEÑA: MORDER LA MANZANA</h1>
+  <p class="paragraf1"><b>Titulo original:</b> Morder la manzana<br> <b>Autor/a:</b> Leticia Dolera <br> <b>Tipo:</b> Autoconclusivo <br>
+<b>Paginas:</b> 288 pàginas <br> <b>Nota media:</b> 4.16/5 <br> 
+<b>Sinopsis: </b>  Es este uno de esos libros esenciales que nacen de la necesidad y de la urgencia. Porque Leticia Dolera
+ necesita contar por qué es feminista y por qué todas deberíamos serlo. Un camino vital en el que se ha encontrado con personas inspiradoras, lecturas reveladoras, anécdotas ―de las buenas, de las malas y de las peores― vividas muy de cerca o en primera persona.
+Este libro es también la historia de mujeres valientes que marcaron el camino y cuyo ejemplo nos ayuda a despertar nuestras conciencias y también a enseñar a las más jóvenes.
+Empezando por Eva, la primera que mordió la manzana, esta es una historia sobre todas las mujeres. Porque Leticia Dolera nos invita a abrazar una causa, que es la de todas las personas que soñamos con una sociedad justa.
+Por mucho que nos hayan repetido que Eva pecó al morder la manzana, nosotras sabemos que aquello fue precisamente lo que la hizo sabia. Entonces ¿qué?, ¿te apetece una? Una obra de empoderamiento feminista para todas las edades.<br>
+La revolución será feminista o no será </p>
+  <p class="paragraf1"><b>Mi pequeña reseña:</b> Ha sido la ultima lectura de este género. Morder la manzana es un libro que presenta de manera conceptual y estadística la desigualdad social de la mujer. Leticia nos presenta esta novela desde un punto de vista diferente, y que personalmente me ha encantado. En este libro se explican los conceptos básicos que hay que tener en cuenta a la hora de hablar sombre estos temas, también un dato importante es el hecho de contar con estadísticas reales sobre los temas que habla, y ahí se ve realmente la desigualdad del sexo femenino. Sin duda un libro recomen dable a todas y todos aquellos que quieran saber más sobre el este movimiento, o a aquellos que como yo, han querido repasar conceptos y ver otros puntos de vista. Esta novela te pone de nuevo las gafas feministas de una manera más directa. 5/5 </p>
+</div>
+</body>
+</html>

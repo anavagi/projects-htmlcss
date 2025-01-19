@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+body {
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+  animation: fondo 5s ease-out;
+  animation-delay: 42s;
+  background-image: url('fondo.jpg');
+}
+
+
+.texto_intro {
+  font-family: "News Cycle", sans-serif;
+  color: #4bd5ee;
+  font-weight: 400;
+  font-size: 240%;
+  letter-spacing: .1em;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  opacity: 0;
+  animation: intro 5s ease-out 0s;
+}
+
+.parrafos {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 700;
+  color: #ff6;
+  text-align: justify;
+  letter-spacing: .1em;
+  line-height: 1.1em;
+  width: 70%;
+  font-size: 150%;
+  margin: 0% 16% 0% 16%;
+  transform: perspective(300px) rotateX(25deg); 
+  animation: parrafos 33s linear;
+  animation-delay: 14s;
+  opacity:0;
+  position: absolute;
+
+}
+.img{
+  animation: imagenintro 10s ease-out;
+  animation-delay: 5s;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0;
+}
+.halconmilenario{
+  position: absolute;
+  animation: halconmilenario 7s linear;
+  animation-delay: 50s;
+  width:20%;
+  opacity:0;
+  z-index: -1;
+  /* transform: perspective(270px) rotateX(60deg) rotateY(30deg) rotateZ(50deg);  */
+} 
+
+.planeta{
+  position: absolute;
+  animation: planeta 30s linear;
+  animation-delay: 45s;
+  width:20%;
+  margin-left: 82%;
+  margin-top:-3%;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 50%;
+
+}
+.img4{
+  position: absolute;
+  animation: imagen2 7s linear;
+  animation-delay: 45s;
+  width:20%;
+  opacity:0;
+  z-index: -1;
+  transform: perspective(360px) rotateX(0deg) rotateY(-40deg) rotateZ(-10deg);
+}
+.one{
+  font-size: 180%;
+  text-align: center;
+}
+.audio{
+  opacity:0;
+}
+
+@keyframes intro {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes parrafos {
+  0% {top: 80%;opacity: 1;}
+  95% { opacity: 1;}
+  100% { top: -100%; opacity: 0;}
+}
+@keyframes imagenintro {
+  0% { opacity: 1; transform: scale(2);}
+  100% {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+@keyframes halconmilenario {
+  0%   { left:-10%; top:55%; opacity: 1;}
+  100% { left:110%; top:5%; opacity: 1; width: 0%;}
+}
+@keyframes planeta {
+  0%   { opacity: 1;}
+  100%  { opacity: 1;}
+}
+@keyframes imagen2 {
+  0%   { left:0%; top:55%; opacity: 1;}
+  100% { left:100%; top:5%; opacity: 1; transform: perspective(360px) rotateX(0deg) rotateY(-40deg) rotateZ(20deg);width: 0%;}
+}
+@keyframes fondo {
+    0%   {background-position-y:-640px;}
+    100% {background-position-y:-0px;}
+}
+</style>
+</head>
+<body>
+
+<img src="halcomilenario2.png" class="halconmilenario"/>
+<img src="planeta2.png" class="planeta"/>
+<section class="texto_intro">
+A long time ago in a galaxy far,<br>far away....
+</section>
+<section class="parrafos">
+      <p class="one">Episode IX</p>
+      <p class="one">THE RISE OF SKYWALKER</p>
+      <p>The dead speak! The galaxy has heard a mysterious broadcast, a threat of REVENGE in the sinister voice of the late EMPEROR PALPATINE.</p>
+      <p>GENERAL LEIA ORGANA dispatches secret agents to gather intelligence, while REY, the last hope of the Jedi, trains for battle against the diabolical FIRST ORDER.</p>
+      <p>Meanwhile, Supreme Leader KYLO REN rages in search of the phantom Emperor, determined to destroy any threat to his  power....</p>
+</section>
+
+<img src="starwars.jpg" class="img"/>
+<audio controls autoplay class="audio">
+  <source src="star wars audio theme 2.mp3" type="audio/mpeg" />
+</audio>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<script type="text/javascript">
+//fiquem la funcio random
+function rand(n)
+{
+ return(Math.floor(Math.random() *3 + 1 ));
+}
+//posem les variables i les imatges
+var cambia_imagen = new Array();
+cambia_imagen[0] = "num_1.png";
+cambia_imagen[1] = "num_2.png";
+cambia_imagen[2] = "mina.png";
+
+//posem les funcions
+function cambiar()
+  {
+    document.getElementById("ia").src = cambia_imagen[rand(3)-1];
+  }
+function cambiar1()
+  {
+    document.getElementById("ie").src = cambia_imagen[rand(3)-1];
+  }
+function cambiar2()
+  {
+    document.getElementById("ii").src = cambia_imagen[rand(3)-1];
+  }
+function cambiar3()
+  {
+    document.getElementById("io").src = cambia_imagen[rand(3)-1];
+  }
+
+//posem el estil
+</script>
+<style type="text/css">
+.mina1
+{
+position:absolute;
+width:70px;
+height: 70px;
+margin-left: 0px;
+margin-top: 10px;
+border-width: 4px;
+}
+.mina2
+{
+position: absolute;
+width:70px;
+height: 70px;
+margin-left: 70px;
+margin-top: 10px;
+border-width: 4px;
+}
+.mina3
+{
+position: absolute;
+width:70px;
+height: 70px;
+margin-left: 0px;
+margin-top: 80px;
+border-width: 4px;
+}
+.mina4
+{
+position:absolute;
+width:70px;
+height: 70px;
+margin-left: 70px;
+margin-top: 80px;
+border-width: 4px;
+}
+</style>
+</head>
+<body>
+<div id="fila1">
+  <div onclick="cambiar()" ><img id="ia" class="mina1"src="casella.png"></div>
+  <div onclick="cambiar1()" "><img id="ie" class="mina2" src="casella.png"></div>
+</div>
+<div id="fila2">
+  <div onclick="cambiar2()" ><img id="ii" class="mina3"src="casella.png"></div>
+  <div onclick="cambiar3()" ><img  id="io" class="mina4"src="casella.png"></div>
+</div>
+</body>
+</html>
