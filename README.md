@@ -42,7 +42,6 @@ This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE.m
 ![DinamicWeb](image-2.png)
 ![Simpleweb](image-3.png)
 ![StawWars](image-4.png)
-_Example of how the blog posts appear in the frontend._
 
 ---
 
