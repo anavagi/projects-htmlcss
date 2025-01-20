@@ -1,0 +1,103 @@
+<html>
+<head>
+    <style>
+    body{
+        background-color: black;
+    }
+    .contenedor{
+        margin-top: 170px;
+        margin-left: 550px;
+        perspective: 800px;
+        perspective-origin: center -300px;
+    }
+    .cubo {
+        position: relative;
+	    width: 200px;
+	    transform-style: preserve-3d;
+        animation: spin 5s infinite linear;
+    }
+    .cara{
+        position: absolute;
+        background: rgb(255,255,255,0.6);
+        text-align: center;
+        width: 160px;
+        height: 90px;
+        padding-top: 50px;
+        font-size:25px;
+        border-radius: 10px;
+        border: 1px solid white;
+
+    }
+    .one{
+        margin-top:-140px;
+        transform-origin: bottom;
+        animation: onecara 5s linear forwards;
+    }
+    .tree{
+        margin-left: 160px;
+        transform-origin: left;
+        animation: treecara 5s linear 15s forwards;
+        width: 140px;
+    }
+    .four{
+        margin-left: -140px;
+        transform-origin: right;
+        animation: fourcara 5s linear 10s forwards;
+        width: 140px;
+    }
+    .five{
+        margin-top:140px;
+        transform-style: preserve-3d;
+        transform-origin: top;
+        animation: fivecara 5s linear 5s forwards;
+    }
+    .six{
+        margin-top:60px;
+        position: absolute;
+        background: rgb(255,255,255,0.6);
+        text-align: center;
+        width: 160px;
+        height: 88px;
+        padding-top: 50px;
+        font-size:25px;
+        border-radius: 10px;
+        border: 1px solid white;
+        transform-origin: top;
+        animation: sixcara 5s linear 20s forwards;
+    }
+    @keyframes onecara {
+	    to { transform: rotateX(90deg);}
+    }
+    @keyframes treecara {
+	    to { transform: rotateY(90deg);}
+    }
+    @keyframes fourcara {
+	    to { transform: rotateY(-90deg);}
+    }
+    @keyframes fivecara {
+	    to { transform: rotateX(-90deg);}
+    }
+    @keyframes sixcara {
+	    to { transform: rotateX(-90deg);}
+    }
+    @keyframes spin {
+	    from { transform: rotateY(0);}
+	    to { transform: rotateY(360deg); }
+    }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cubo">
+            <div class="one cara">Superior</div>
+            <div class="two cara">Frontal</div>
+            <div class="tree cara">Dreta</div>
+            <div class="four cara">Esquerra</div>
+            <div class="five cara">
+                <div>Inferior</div>
+                <div class="six">Posterior</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
